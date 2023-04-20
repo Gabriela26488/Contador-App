@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
+import Welcome from '../components/Welcome';
 
 
 /**
@@ -36,12 +38,17 @@ export const CounterApp = ({value}) => {
 
     return(
         <>
+            <Welcome title="Bienvenido al Contador" />
             <h1>CounterApp desde 10</h1>
             <h2>{ counter }</h2>
 
             <button onClick={ handleAdd }> +1 </button>
             <button onClick={ resta }>-1</button>
             <button onClick={ reset }>Reset</button>
+
+            <h3>Gabriela Fernandez</h3>
+            <h3>Wilmer Villarreal</h3>
+            <p> Diplomado Competencias Profesionales</p>
         </>
     )
 }
